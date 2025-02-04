@@ -1,16 +1,16 @@
-package zone.rong.loliasm.core;
+package zone.rong.garyasm.core;
 
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
-import zone.rong.loliasm.LoliLogger;
-import zone.rong.loliasm.config.LoliConfig;
+import zone.rong.garyasm.GaryLogger;
+import zone.rong.garyasm.config.GaryConfig;
 
 import java.util.Collections;
 import java.util.List;
 import java.util.Set;
 
-public class LoliSpriteMixinPlugin implements IMixinConfigPlugin {
+public class GarySpriteMixinPlugin implements IMixinConfigPlugin {
 
     private Boolean shouldApply;
 
@@ -27,11 +27,11 @@ public class LoliSpriteMixinPlugin implements IMixinConfigPlugin {
         if (this.shouldApply != null) {
             return this.shouldApply;
         }
-        this.shouldApply = LoliConfig.instance.onDemandAnimatedTextures;
+        this.shouldApply = GaryConfig.instance.onDemandAnimatedTextures;
         if (this.shouldApply) {
-            if (LoliTransformer.isOptifineInstalled) {
+            if (GaryTransformer.isOptifineInstalled) {
                 this.shouldApply = false;
-                LoliLogger.instance.error("Optifine is installed. onDemandAnimatedTextures won't be activated as Optifine already has Smart Animations.");
+                GaryLogger.instance.error("Optifine is installed. onDemandAnimatedTextures won't be activated as Optifine already has Smart Animations.");
             }
         }
         return this.shouldApply;
