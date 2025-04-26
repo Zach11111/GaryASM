@@ -5,9 +5,9 @@
   "description": "The garys have bytecode manipulated your game.",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "https://github.com/GaryKingdom/GaryASM",
+  "url": "https://github.com/Zach11111/GaryASM",
   "updateUrl": "",
-  "authorList": ["Rongmario"],
+  "authorList": ["Rongmario", "Zachcatlover23"],
   "logoFile": "assets/garyasm/garyasm.png",
   "screenshots": [],
   "dependencies": []

@@ -1,4 +1,4 @@
-package zone.rong.loliasm.common.modfixes.particlefixes.mixins;
+package zone.rong.garyasm.common.modfixes.particlefixes.mixins;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
